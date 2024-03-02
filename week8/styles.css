@@ -1,0 +1,169 @@
+@font-face {
+  font-family: "Japanese Font";
+  src: url("./assets/font/electroharmonix.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Japanese Font";
+}
+
+body {
+  background-color: hsl(41, 65%, 85%);
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  height: 100dvh;
+  background-image: url("./assets/images/header_background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10rem;
+}
+
+header h1 {
+  font-size: 4rem;
+}
+
+.hobbies {
+  width: clamp(500px, 80%, 800px);
+  margin: 4rem auto;
+}
+
+.hobbies h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.hobbies .grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+
+.hobbies .grid-container .card {
+  border: 1px solid hsl(354, 74%, 55%);
+  box-shadow: 0 0 0 4px hsl(41, 65%, 85%), 0 0 0 5px hsl(354, 74%, 55%);
+  padding: 1rem;
+}
+
+.hobbies .card .card-title {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.hobbies .card .card-description {
+  line-height: 1.5;
+}
+
+.favorite-pet {
+  width: clamp(300px, 80vw, 800px);
+  margin: 4rem auto;
+  display: flex;
+  gap: 3rem;
+}
+
+.favorite-pet h2 {
+  font-size: 2rem;
+}
+
+.favorite-pet .description {
+  flex: 1;
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.5;
+}
+
+.challenges {
+  width: clamp(500px, 80%, 800px);
+  margin: 4rem auto;
+}
+
+.challenges .heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.challenges .heading h2 {
+  font-size: 2rem;
+}
+
+.challenges .heading .second-cloud {
+  transform: scaleX(-1);
+}
+
+.challenges .description {
+  background-color: hsl(41, 65%, 90%);
+  padding: 2rem 3rem;
+  display: flex;
+  margin-top: 1rem;
+}
+
+.challenges .description .gif {
+  width: 90%;
+}
+
+.challenges .description p {
+  line-height: 1.5;
+  margin-left: 1rem;
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+.waifu-gallery {
+  width: clamp(500px, 80%, 800px);
+  margin: 4rem auto 0;
+  position: relative;
+}
+
+.waifu-gallery h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.waifu-gallery .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  margin-top: 2rem;
+  padding-bottom: 5rem;
+}
+
+.waifu-gallery .image {
+  height: 30rem;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.waifu-gallery img {
+  width: 100%;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+
+.waifu-gallery img:hover {
+  transform: scale(1.1);
+}
+
+.waifu-container {
+  background-image: url("./assets/images/last_section_background.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
