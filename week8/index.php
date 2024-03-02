@@ -127,13 +127,7 @@
       </div>
     </div>
     <?php
-    $a = 1;
-    $b = $a + 2;
-    var_dump($a);
-
-    if ($a == 1) {
-      $a = 2;
-    }
+    $cars = array("Volvo", "BMW", "Toyota");
     ?>
   </main>
 </body>
