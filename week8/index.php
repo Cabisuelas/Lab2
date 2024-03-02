@@ -128,6 +128,7 @@
     </div>
     <?php
     $a = 1;
+    var_dump($a);
     ?>
   </main>
 </body>
